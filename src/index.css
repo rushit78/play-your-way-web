@@ -2,39 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* GetMySport Design System - Sports themed with brand colors */
 
 @layer base {
   :root {
+    /* Brand Colors from Logo */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Teal/Dark Blue from logo */
+    --primary: 197 68% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 197 68% 35%;
+    --primary-glow: 197 68% 45%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Orange from logo */
+    --secondary: 15 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 15 85% 70%;
+
+    /* Sport field green */
+    --sport-green: 120 60% 35%;
+    --sport-green-light: 120 50% 45%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 197 25% 92%;
+    --accent-foreground: 197 68% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 197 68% 25%;
+
+    /* Custom Design Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --sport-gradient: linear-gradient(135deg, hsl(var(--sport-green)), hsl(var(--sport-green-light)));
+    --energy-gradient: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--secondary-light)));
+    --card-shadow: 0 10px 30px -10px hsl(var(--primary) / 0.1);
+    --glow-shadow: 0 0 40px hsl(var(--primary-glow) / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
