@@ -63,15 +63,15 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Action Buttons */}
+        {/* Call to Action */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Button variant="hero" size="lg" className="px-8 py-4 text-lg">
             <Calendar className="mr-2 h-5 w-5" />
-            Book Now
+            Get Started
           </Button>
           <Button variant="outline" size="lg" className="px-8 py-4 text-lg border-white/30 text-white hover:bg-white hover:text-primary">
             <Star className="mr-2 h-5 w-5" />
-            Top Rated Grounds
+            Learn More
           </Button>
         </div>
 
