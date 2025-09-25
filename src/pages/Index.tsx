@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import FeaturedGrounds from '@/components/FeaturedGrounds';
 import Features from '@/components/Features';
 import Footer from '@/components/Footer';
 
@@ -10,7 +9,6 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <FeaturedGrounds />
         <Features />
       </main>
       <Footer />
